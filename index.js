@@ -8,6 +8,10 @@ app.use(express.json());
 
 app.use("/api", userRoute);
 
+app.get("/home", (req, res) => {
+  res.send("kya haal bha:)");
+});
+
 app.listen(PORT, async () => {
   console.log(`server started at port ${PORT}`);
   await connectDB();
