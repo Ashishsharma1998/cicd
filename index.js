@@ -12,6 +12,10 @@ app.get("/home", (req, res) => {
   res.send("kya haal bha:)");
 });
 
+app.get("/blogs", (req, res) => {
+  res.send("tu khon bol rah h!!!!");
+});
+
 app.listen(PORT, async () => {
   console.log(`server started at port ${PORT}`);
   await connectDB();
